@@ -33,17 +33,4 @@ public class SunShadowDetector : MonoBehaviour
         float alphaMax = .1f;
         return skyColor.a < alphaMax;
     }
-
-    private void Update()
-    {
-        if (IsInSunLight())
-        {
-            Debug.Log("InSun");
-        }
-        else
-        {
-            Debug.Log("InShadow");
-        }
-        
-    }
 }
